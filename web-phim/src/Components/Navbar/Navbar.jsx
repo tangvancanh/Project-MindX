@@ -53,11 +53,11 @@ const Navbar = () => {
           </div>
         </div>
         <div className="navRight">
-          <div className="nameID">Teen tai khoan</div>
-          <div className="dangnhap-ky">
+          {/* <div className="nameID">Teen tai khoan</div> */}
+          {/* <div className="dangnhap-ky">
             <button>Dangnhap</button>
             <button>Dangky</button>
-          </div>
+          </div> */}
           <div className="toggleButton" ref={refToggle} onClick={handleToggle}>
             <input type="checkbox" className="checkboxButton" ref={refButton}/>
             <div className="iconButton">
