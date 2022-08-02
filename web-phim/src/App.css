@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+:root{
+    --color-background: rgb(17,17,17);
+}
+
+.darkTheme {
+    background-color: var(--color-background);
+    color: #fff;
+}
+
+.lightTheme {
+    background-color: #c4e8f7;
+    color: #111;
+}
