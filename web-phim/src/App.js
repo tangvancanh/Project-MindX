@@ -15,7 +15,7 @@ function App() {
     <div className={themeContext.theme}>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/Project-MindX" element={<Home />} />
           <Route path="/sign-up" element={<SignUP />} />
           <Route path="/sign-in" element={<SignIn />} />
           <Route path="/search" element={<Search />} />
