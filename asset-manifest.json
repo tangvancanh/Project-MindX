@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Project-MindX/static/css/main.342060b0.css",
-    "main.js": "/Project-MindX/static/js/main.4bf44dbb.js",
-    "index.html": "/Project-MindX/index.html",
-    "main.342060b0.css.map": "/Project-MindX/static/css/main.342060b0.css.map",
-    "main.4bf44dbb.js.map": "/Project-MindX/static/js/main.4bf44dbb.js.map"
+    "main.css": "/Project-MindX/web-phim/static/css/main.342060b0.css",
+    "main.js": "/Project-MindX/web-phim/static/js/main.b15d5774.js",
+    "index.html": "/Project-MindX/web-phim/index.html",
+    "main.342060b0.css.map": "/Project-MindX/web-phim/static/css/main.342060b0.css.map",
+    "main.b15d5774.js.map": "/Project-MindX/web-phim/static/js/main.b15d5774.js.map"
   },
   "entrypoints": [
     "static/css/main.342060b0.css",
-    "static/js/main.4bf44dbb.js"
+    "static/js/main.b15d5774.js"
   ]
 }
