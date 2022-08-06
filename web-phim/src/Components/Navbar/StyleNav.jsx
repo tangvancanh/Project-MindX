@@ -8,7 +8,6 @@ export const SNavigation = styled.div`
   z-index: 10;
 
   .navContainer {
-    /* background-color: var(--color-background); */
     display: flex;
     justify-content: space-between;
     padding: 0px 25px;
@@ -74,8 +73,51 @@ export const SNavigation = styled.div`
       justify-content: center;
 
       .nameID {
-        color: white;
         padding: 0px 10px;
+        margin-right: 15px;
+        padding: 5px 10px;
+        background-color: #858282;
+        font-size: 20px;
+        border-radius: 8px;
+        cursor: pointer;
+        &:hover {
+          background-color: green;
+        }
+      }
+
+      .sign-in-up {
+        margin-right: 20px;
+
+        .sign-in {
+          background-color: #f78543;
+          border: 1px solid yellow;
+          padding: 5px 10px;
+          margin-right: 5px;
+          border-radius: 5px;
+          &:hover {
+            background-color: #e95906;
+          }
+        }
+
+        .sign-up {
+          background-color: #f78543;
+          border: 1px solid yellow;
+          padding: 5px 10px;
+          border-radius: 5px;
+          &:hover {
+            background-color: #e95906;
+          }
+        }
+
+        .log-out {
+          background-color: #f78543;
+          border: 1px solid yellow;
+          padding: 5px 10px;
+          border-radius: 5px;
+          &:hover {
+            background-color: #e95906;
+          }
+        }
       }
 
       .toggleButton {
@@ -90,35 +132,31 @@ export const SNavigation = styled.div`
         background: white;
 
         .checkboxButton {
-            height: 0;
-            width: 0;
-            opacity: 0;
+          height: 0;
+          width: 0;
+          opacity: 0;
         }
-        
+
         .checkboxButton:checked ~ .circle {
-            transform: translateX(-28px);
-            /* -webkit-transform: translateX(-28px);
-            -ms-transform: translateX(-28px); */
+          transform: translateX(-28px);
         }
 
         .checkboxButton:checked ~ .iconButton {
-            transform: translateX(28px);
-            /* -webkit-transform: translateX(28px);
-            -ms-transform: translateX(28px); */
+          transform: translateX(28px);
         }
 
         .iconButton {
-            font-size: 20px;
-            margin-top: 5px;
-            transition: all 0.2s ease;
+          font-size: 20px;
+          margin-top: 5px;
+          transition: all 0.2s ease;
         }
 
-        .circle{
-            width: 24px;
-            height: 24px;
-            background: #141313;
-            border-radius: 50%;
-            transform: all 0.2s ease;
+        .circle {
+          width: 24px;
+          height: 24px;
+          background: #141313;
+          border-radius: 50%;
+          transform: all 0.2s ease;
         }
       }
     }

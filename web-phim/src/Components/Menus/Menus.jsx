@@ -1,26 +1,24 @@
 import React from "react";
 import { FaHome, FaHotjar, FaStar } from "react-icons/fa";
-import { MdTheaterComedy, MdTheaterConedy } from "react-icons/md";
-import {
-  GiNinjaHeroicStance,
-  GiRomanToga,
-  GiGhost,
-  GiBandageRoll,
-} from "react-icons/gi";
+import { MdTheaterComedy } from "react-icons/md";
+import { GiNinjaHeroicStance, GiRomanToga, GiGhost } from "react-icons/gi";
 import { SMenus } from "./StyleMenus";
 import MenuItem from "./MenuItem";
 
 const Menus = () => {
   return (
     <SMenus>
-      <MenuItem name="Home" Icon={FaHome} />
-      <MenuItem name="Trending" Icon={FaHotjar} />
-      <MenuItem name="Top rated" Icon={FaStar} />
-      <MenuItem name="Actions Movies" Icon={GiNinjaHeroicStance} />
-      <MenuItem name="Comedy Movies" Icon={MdTheaterComedy} />
-      <MenuItem name="Horror Movies" Icon={GiGhost} />
-      <MenuItem name="Romance Movies" Icon={GiRomanToga} />
-      <MenuItem name="Documentaries" Icon={GiBandageRoll} />
+      <MenuItem name="Phim chiếu rạp" Icon={FaHome} to="chieu-rap" />
+      <MenuItem name="Phim HOT" Icon={FaHotjar} to="hot" />
+      <MenuItem name="Phim tài liệu" Icon={FaStar} to="tai-lieu" />
+      <MenuItem
+        name="Phim hành động"
+        Icon={GiNinjaHeroicStance}
+        to="hanh-dong"
+      />
+      <MenuItem name="Phim tình cảm" Icon={MdTheaterComedy} to="tinh-cam" />
+      <MenuItem name="Phim ma" Icon={GiGhost} to="ma" />
+      <MenuItem name="Phim kiếm hiệp" Icon={GiRomanToga} to="kiem-hiep" />
     </SMenus>
   );
 };

@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const SIntro = styled.div`
-  /* background-color: var(--color-background); */
   position: relative;
   color: white;
   padding-top: 35%;
@@ -16,7 +15,7 @@ export const SIntro = styled.div`
   .infoIntro {
     position: absolute;
     top: 140px;
-    left: 30px;
+    left: 55px;
     user-select: none;
 
     .headingIntro {

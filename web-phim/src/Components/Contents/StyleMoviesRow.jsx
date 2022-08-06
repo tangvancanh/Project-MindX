@@ -9,11 +9,12 @@ export const SMoviesContainer = styled.div`
   .heading {
     font-size: 30px;
     user-select: none;
+    margin-left: 45px;
   }
 
   .moviesList {
     display: grid;
-    grid-template-columns: repeat(${(props) => props.movies.length}, 300px);
+    grid-template-columns: repeat(${(props) => props.movie}, 300px);
     gap: 6px;
     transition: all 0.3s linear;
     user-select: none;
@@ -39,11 +40,12 @@ export const SMoviesContainer = styled.div`
       border-radius: 8px;
       transform: center left;
       position: relative;
+      cursor: pointer;
 
       &:hover {
         opacity: 1;
         transform: scale(1.1);
-        z-index: 10;
+        z-index: 8;
       }
 
       img {
@@ -69,7 +71,7 @@ export const SMoviesContainer = styled.div`
     position: absolute;
     top: 50%;
     left: 30px;
-    z-index: 20;
+    z-index: 9;
     transform-origin: center;
     cursor: pointer;
     width: 40px;
@@ -105,7 +107,7 @@ export const SMoviesContainer = styled.div`
     position: absolute;
     top: 50%;
     right: 30px;
-    z-index: 20;
+    z-index: 9;
     transform-origin: center;
     cursor: pointer;
     width: 40px;

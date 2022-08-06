@@ -1,15 +1,22 @@
 import React from "react";
 import { randomColor } from "../../utils";
+import { Link } from "react-scroll";
 
 const MenuItem = (props) => {
-  const { name, Icon } = props;
+  const { name, Icon, to } = props;
   return (
-    <div>
-      <div className="subMenu">
-        <Icon className="icon" style={{ color: randomColor(1) }} />
-        <span>{name}</span>
-      </div>
-    </div>
+    <Link
+      className="subMenu"
+      to={to}
+      spy={true}
+      smooth={true}
+      offset={-70}
+      duration={500}
+      activeClass="active"
+    >
+      <Icon className="icon" style={{ color: randomColor(1) }} />
+      <span>{name}</span>
+    </Link>
   );
 };
 
