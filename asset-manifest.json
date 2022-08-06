@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/io/Project-MindX/static/css/main.342060b0.css",
+    "main.js": "/io/Project-MindX/static/js/main.949b29f8.js",
+    "index.html": "/io/Project-MindX/index.html",
+    "main.342060b0.css.map": "/io/Project-MindX/static/css/main.342060b0.css.map",
+    "main.949b29f8.js.map": "/io/Project-MindX/static/js/main.949b29f8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.342060b0.css",
+    "static/js/main.949b29f8.js"
+  ]
+}
