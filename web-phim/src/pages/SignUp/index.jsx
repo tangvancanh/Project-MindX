@@ -35,7 +35,7 @@ const SignUP = () => {
     <SSignUp>
       <div className="logo">
         <Link to="../">
-          <img src="/images/navbar.jpg" alt="navbar" />
+          <img src="/images/navbar.png" alt="navbar" />
         </Link>
       </div>
       <div className="form">

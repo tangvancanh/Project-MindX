@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { SMovieDetail } from "./StyleMovieDetail";
-import momemt from "react-moment";
-import "moment-timezone";
+// import momemt from "react-moment";
+// import "moment-timezone";
 
 const MovieDetail = (props) => {
   const { movieDetail } = props;
@@ -14,7 +14,18 @@ const MovieDetail = (props) => {
   useEffect(() => {
     movieDetail && setShowModal(true);
   }, [movieDetail]);
-  console.log(movieDetail && movieDetail);
+
+//   const handleAddMovie = () => {
+//     console.log(movieDetail);
+//     const moviesList = localStorage.getItem("moviesList")
+//       ? JSON.parse(localStorage.getItem("moviesList"))
+//       : [];
+//     localStorage.setItem(
+//       "moviesList",
+//       JSON.stringify([...moviesList, movieDetail])
+//     );
+//   };
+
   return (
     <SMovieDetail>
       <div
@@ -53,6 +64,9 @@ const MovieDetail = (props) => {
                 (movieDetail.release_date || movieDetail.first_air_date)}
             </p>
             <p className="overview">{movieDetail && movieDetail.overview}</p>
+            {/* <button className="addMovie" onClick={handleAddMovie}>
+              Add
+            </button> */}
           </div>
         </div>
       </div>

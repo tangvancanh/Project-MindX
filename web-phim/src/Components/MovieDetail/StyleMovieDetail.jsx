@@ -31,11 +31,40 @@ export const SMovieDetail = styled.div`
     box-shadow: 0 15px 40px #333232;
     transition: all 0.3s ease;
 
+    @media only screen and (max-width: 1184px) {
+      height: 38rem;
+    }
+    @media only screen and (max-width: 600px) {
+      height: 50rem;
+    }
+
     .container {
       position: relative;
       width: 70%;
       height: 100%;
       background: linear-gradient(90deg, rgba(0, 0, 0, 0.94) 60%, transparent);
+
+      @media only screen and (max-width: 1184px) {
+        background: linear-gradient(
+          90deg,
+          rgb(0, 0, 0) 55%,
+          rgba(0, 0, 0, 0.733),
+          transparent
+        );
+        width: 88%;
+      }
+      @media only screen and (max-width: 980px) {
+        background: linear-gradient(
+          90deg,
+          rgba(0, 0, 0, 0.966) 65%,
+          transparent
+        );
+        width: 100%;
+      }
+      @media only screen and (max-width: 600px) {
+        margin-top: 10px;
+        margin-left: 10px;
+      }
 
       .movieInfo {
         width: 65%;
@@ -53,6 +82,18 @@ export const SMovieDetail = styled.div`
           cursor: pointer;
           &:hover {
             background-color: red;
+          }
+        }
+
+        .addMovie {
+          margin-top: 10px;
+          padding: 10px 20px;
+          border-radius: 6px;
+          font-size: 25px;
+          background-color: gray;
+          cursor: pointer;
+          &:hover {
+            background-color: green;
           }
         }
 

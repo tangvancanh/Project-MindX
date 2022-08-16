@@ -12,6 +12,11 @@ export const SNavigation = styled.div`
     justify-content: space-between;
     padding: 0px 25px;
 
+    @media only screen and (max-width: 600px) {
+      flex-direction: column;
+      height: 100px;
+    }
+
     .navLeft {
       display: flex;
       align-items: center;
@@ -19,7 +24,7 @@ export const SNavigation = styled.div`
       height: 100%;
 
       .logo {
-        width: 60px;
+        width: 120px;
         cursor: pointer;
 
         img {
@@ -30,7 +35,7 @@ export const SNavigation = styled.div`
       .navSearch {
         color: white;
         display: flex;
-        padding: 25px;
+        padding: 25px 10px;
         justify-content: flex-end;
 
         &:hover .iconSearch {

@@ -51,7 +51,7 @@ const Navbar = () => {
         <div className="navLeft">
           <div className="logo">
             <Link to="../">
-              <img src="/images/navbar.jpg" alt="navbar" />
+              <img src="/images/navbar.png" alt="navbar" />
             </Link>
           </div>
           <div className="navSearch">
@@ -60,7 +60,13 @@ const Navbar = () => {
           </div>
         </div>
         <div className="navRight">
-          {user && <button className="nameID">Hello {user.username}</button>}
+          {user && (
+            // <Link to="list-movie" className="nameID">
+            <div className="nameID">
+              Hello {user.username}
+            </div>
+            // </Link>
+          )}
           <div className="sign-in-up">
             {user ? (
               <Link to="sign-in" className="log-out" onClick={handleLogIn}>

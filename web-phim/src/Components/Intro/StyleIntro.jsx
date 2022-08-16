@@ -18,9 +18,25 @@ export const SIntro = styled.div`
     left: 55px;
     user-select: none;
 
+    @media screen and (max-width: 800px) {
+      top: 70px;
+      left: 20px;
+    }
+    @media screen and (max-width: 600px) {
+      top: 50px;
+      left: 15px;
+    }
+
     .headingIntro {
       font-size: 60px;
       transition: all 0.3s ease;
+
+      @media screen and (max-width: 800px) {
+        font-size: 40px;
+      }
+      @media screen and (max-width: 600px) {
+        font-size: 24px;
+      }
     }
 
     .overviewIntro {
@@ -29,6 +45,13 @@ export const SIntro = styled.div`
       line-height: 1.3;
       padding-top: 25px;
       font-size: 18px;
+
+      @media screen and (max-width: 800px) {
+        font-size: 16px;
+      }
+      @media screen and (max-width: 600px) {
+        font-size: 14px;
+      }
     }
   }
 
@@ -49,6 +72,17 @@ export const SIntro = styled.div`
       color: #fff;
       transform: scale(1.2);
       background-color: #b3acac;
+    }
+
+    @media screen and (max-width: 800px) {
+      height: 30px;
+      width: 30px;
+      padding: 4px;
+    }
+    @media screen and (max-width: 600px) {
+      height: 20px;
+      width: 20px;
+      padding: 1px;
     }
   }
 `;

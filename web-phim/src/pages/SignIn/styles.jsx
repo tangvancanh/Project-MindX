@@ -4,7 +4,7 @@ export const SSignIn = styled.div`
   .logo {
     position: fixed;
     top: 0;
-    width: 60px;
+    width: 100px;
     cursor: pointer;
     margin: 12px 25px;
 
